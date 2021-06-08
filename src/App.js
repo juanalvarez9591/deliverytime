@@ -1,30 +1,46 @@
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-const hamburger =
-  "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/165384.jpg";
+import Food from "./components/Food";
+import "./components/styles/Food.css";
 
 function App() {
-  const Order = () => console.log("Encargado");
-
   return (
-    <>
-      <Card style={{ width: "12rem" }}>
-        <Card.Img variant="top" src={hamburger} />
-        <Card.Body>
-          <Card.Title style={{ fontSize: "1.3rem" }}>
-            Hamburgesa con doble queso
-          </Card.Title>
-          <Card.Text style={{ fontSize: "0.7rem" }}>
-            Con mayonesa, ketchup y doble queso cheddar. Incluye papas fritas!
-          </Card.Text>
-          <Button variant="primary" onClick={Order}>
-            Encargar ya!
-          </Button>
-        </Card.Body>
-      </Card>
-    </>
+    <div>
+      <Food
+        title="Chivito al plato"
+        subtitle="Incluye lechuga, tomate, papas fritas, mayonesa y ketchup"
+        url="https://images-gmi-pmc.edge-generalmills.com/50e3c816-1fc7-440f-881d-1047b90809d5.jpg"
+        price="230 UYU"
+      />
+      <Food
+        title="Ensalada rusa"
+        subtitle="Lechuga y otras cosas veganas..."
+        url="https://www.laylita.com/recetas/wp-content/uploads/2011/08/Receta-de-la-ensalada-rusa.jpg"
+        price="400 UYU"
+      />
+      <Food
+        title="Chivito al plato"
+        subtitle="Incluye lechuga, tomate, papas fritas, mayonesa y ketchup"
+        url="https://images-gmi-pmc.edge-generalmills.com/50e3c816-1fc7-440f-881d-1047b90809d5.jpg"
+        price="230 UYU"
+      />
+      <Food
+        title="Ensalada rusa"
+        subtitle="Lechuga y otras cosas veganas..."
+        url="https://www.laylita.com/recetas/wp-content/uploads/2011/08/Receta-de-la-ensalada-rusa.jpg"
+        price="400 UYU"
+      />
+      <Food
+        title="Chivito al plato"
+        subtitle="Incluye lechuga, tomate, papas fritas, mayonesa y ketchup"
+        url="https://images-gmi-pmc.edge-generalmills.com/50e3c816-1fc7-440f-881d-1047b90809d5.jpg"
+        price="230 UYU"
+      />
+      <Food
+        title="Ensalada rusa"
+        subtitle="Lechuga y otras cosas veganas..."
+        url="https://www.laylita.com/recetas/wp-content/uploads/2011/08/Receta-de-la-ensalada-rusa.jpg"
+        price="400 UYU"
+      />
+    </div>
   );
 }
 
