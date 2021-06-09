@@ -1,5 +1,4 @@
 import Food from "./components/Food";
-import "./components/styles/Food.css";
 
 function App() {
   return (

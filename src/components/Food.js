@@ -1,6 +1,5 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Food(props) {
   const Order = () => console.log("Encargado");
@@ -15,7 +14,7 @@ function Food(props) {
             {props.price}
           </Card.Subtitle>
           <Card.Text style={{ fontSize: "0.7rem" }}>{props.subtitle}</Card.Text>
-          <Button variant="primary" onClick={Order}>
+          <Button variant="danger" onClick={Order}>
             Encargar ya!
           </Button>
         </Card.Body>
