@@ -1,0 +1,25 @@
+{
+    "chivito": [
+        {
+            "key": 0,
+            "title": "Chivito al pan",
+            "subtitle": "Con papas...",
+            "url": "https://img-global.cpcdn.com/recipes/recipes_38143_v1393350360_receta_foto_00038143/400x400cq70/photo.jpg",
+            "price": "200 UYU"
+        },
+        {
+            "key": 1,
+            "title": "Chivito al plato",
+            "subtitle": "Como el chivito al pan pero al plato...",
+            "url": "https://img-global.cpcdn.com/recipes/recipes_38143_v1393350360_receta_foto_00038143/400x400cq70/photo.jpg",
+            "price": "170 UYU"
+        },
+        {
+            "key": 2,
+            "title": "Chivito",
+            "subtitle": "La opcion mas economica, simplemente una rebanda de carne aceitosa...",
+            "url": "https://img-global.cpcdn.com/recipes/recipes_38143_v1393350360_receta_foto_00038143/400x400cq70/photo.jpg",
+            "price": "120 UYU"
+        }
+    ]
+}

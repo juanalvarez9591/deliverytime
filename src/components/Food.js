@@ -7,7 +7,7 @@ function Food(props) {
   return (
     <>
       <Card style={{ width: "12rem" }}>
-        <Card.Img variant="top" src={props.url} />
+        <Card.Img variant="top" src={props.url} style={{ height: "8rem" }} />
         <Card.Body>
           <Card.Title style={{ fontSize: "1.3rem" }}>{props.title}</Card.Title>
           <Card.Subtitle style={{ fontSize: "0.7rem" }}>
