@@ -26,16 +26,43 @@ function Menu(props) {
 
 	return (
 		<>
-			<button
-				type="button"
-				onClick={() => changeMenu(generateComponents("pack"))}
-			>
-				Chivito
-			</button>
-
-			<Container>
-				<Row>{menu}</Row>
-			</Container>
+			<Tab.Container id="left-tabs-example" defaultActiveKey="first">
+				<Row>
+					<Col sm={3}>
+						<Nav variant="pills" className="flex-column">
+							<Nav.Item>
+								<Nav.Link
+									eventKey="first"
+									onSelect={() =>
+										changeMenu(generateComponents("pack"))
+									}
+								>
+									Pack
+								</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link
+									eventKey="second"
+									onSelect={() =>
+										changeMenu(
+											generateComponents("chivito")
+										)
+									}
+								>
+									Chivito
+								</Nav.Link>
+							</Nav.Item>
+						</Nav>
+					</Col>
+					<Col sm={9}>
+						<Tab.Content>
+							<Container>
+								<Row>{menu}</Row>
+							</Container>
+						</Tab.Content>
+					</Col>
+				</Row>
+			</Tab.Container>
 		</>
 	);
 }
