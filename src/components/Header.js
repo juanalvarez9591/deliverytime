@@ -2,20 +2,32 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
+import forkimg from "../images/resources/fork.png";
+import checkoutimg from "../images/resources/checkout.png";
 const BusinessLogo =
 	"https://mir-s3-cdn-cf.behance.net/project_modules/disp/5ea7298839539.560c656d1a01f.png";
 
 function Header() {
 	return (
-		<Navbar bg="dark" variant="dark">
+		<Navbar bg="softy">
 			<Link to="/">
 				<img src={BusinessLogo} style={{ width: "8rem" }}></img>
 			</Link>
 			<Nav className="mr-auto" style={{ padding: "1rem" }}>
-				<Link to="/menu">Menu</Link>
+				<Link to="/menu">
+					<img
+						src={forkimg}
+						style={{ height: "50px", width: "60px" }}
+					></img>
+				</Link>
 			</Nav>
 			<Nav style={{ padding: "1rem" }}>
-				<Link to="/checkout">Encargar</Link>
+				<Link to="/checkout">
+					<img
+						src={checkoutimg}
+						style={{ height: "50px", width: "60px" }}
+					></img>
+				</Link>
 			</Nav>
 		</Navbar>
 	);
