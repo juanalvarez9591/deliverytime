@@ -1,10 +1,10 @@
 import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
-import Food from "./Food";
+import Food from "../components/Food";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import data from "./menu.json";
+import data from "../components/menu.json";
 import React, { useState } from "react";
 
 function Menu(props) {

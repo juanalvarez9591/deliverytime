@@ -1,10 +1,22 @@
-import Menu from "./components/Menu";
+import Menu from "./pages/Menu";
+import Home from "./pages/Home";
+import Checkout from "./pages/Checkout";
+import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
+
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<>
-			<Menu />
-		</>
+		<BrowserRouter>
+			<Navbar />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/menu" component={Menu} />
+				<Route exact path="/checkout" component={Checkout} />
+				<Route component={NotFound} />
+			</Switch>
+		</BrowserRouter>
 	);
 }
 
