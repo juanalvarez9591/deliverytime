@@ -9,7 +9,7 @@ const BusinessLogo =
 
 function Header() {
 	return (
-		<Navbar bg="softy">
+		<Navbar bg="softy" style={{ height: "5rem" }}>
 			<Link to="/">
 				<img src={BusinessLogo} style={{ width: "8rem" }}></img>
 			</Link>

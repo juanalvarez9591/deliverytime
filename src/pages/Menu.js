@@ -27,7 +27,7 @@ function Menu(props) {
 	return (
 		<>
 			<Tab.Container id="left-tabs-example" defaultActiveKey="chivito">
-				<Row>
+				<Row style={{ padding: "1rem" }}>
 					<Col sm={3}>
 						<Nav variant="pills" className="flex-column">
 							<Nav.Item>
