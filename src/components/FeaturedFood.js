@@ -1,13 +1,20 @@
 import Carousel from "react-bootstrap/Carousel";
+import data from "./featuredfood.json";
 
 function Featured() {
 	function CarouselSize() {
 		if (window.innerWidth > 480) {
-			return { borderRadius: "1rem", width: "40rem" };
+			return { borderRadius: "1rem", width: "40rem", height: "25rem" };
 		} else {
-			return { borderRadius: "1rem", width: "20rem" };
+			return { borderRadius: "1rem", width: "20rem", height: "12.5rem" };
 		}
 	}
+
+	const CarouselComponents = data.map((i) => (
+		<Carousel.Item>
+			<img src={i.url} alt={i.alt} style={CarouselSize()} />
+		</Carousel.Item>
+	));
 
 	return (
 		<div
@@ -17,15 +24,7 @@ function Featured() {
 				padding: "1rem",
 			}}
 		>
-			<Carousel>
-				<Carousel.Item>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/8/88/McDonald%27s_McDouble_close.jpg"
-						alt="First slide"
-						style={CarouselSize()}
-					/>
-				</Carousel.Item>
-			</Carousel>
+			<Carousel>{CarouselComponents}</Carousel>
 		</div>
 	);
 }
