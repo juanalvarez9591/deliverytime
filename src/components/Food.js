@@ -12,7 +12,7 @@ function Food(props) {
 					src={props.url}
 					style={{ height: "8rem" }}
 				/>
-				<Card.Body>
+				<Card.Body style={{ height: "8rem" }}>
 					<Card.Title style={{ fontSize: "1.2rem" }}>
 						{props.title}
 					</Card.Title>
@@ -25,14 +25,14 @@ function Food(props) {
 						{props.subtitle}
 					</Card.Text>
 				</Card.Body>
-				<Card.Footer
+				<Card.Body
 					style={{
 						display: "grid",
 						justifyContent: "center",
 					}}
 				>
 					<Button onClick={Order}>Encargar ya!</Button>
-				</Card.Footer>
+				</Card.Body>
 			</Card>
 		</>
 	);
