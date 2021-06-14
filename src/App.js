@@ -2,14 +2,14 @@ import Menu from "./pages/Menu";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Navbar />
+			<Header />
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/menu" component={Menu} />

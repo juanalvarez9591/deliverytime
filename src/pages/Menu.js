@@ -26,13 +26,13 @@ function Menu(props) {
 
 	return (
 		<>
-			<Tab.Container id="left-tabs-example" defaultActiveKey="first">
+			<Tab.Container id="left-tabs-example" defaultActiveKey="chivito">
 				<Row>
 					<Col sm={3}>
 						<Nav variant="pills" className="flex-column">
 							<Nav.Item>
 								<Nav.Link
-									eventKey="first"
+									eventKey="pack"
 									onSelect={() =>
 										changeMenu(generateComponents("pack"))
 									}
@@ -42,7 +42,7 @@ function Menu(props) {
 							</Nav.Item>
 							<Nav.Item>
 								<Nav.Link
-									eventKey="second"
+									eventKey="chivito"
 									onSelect={() =>
 										changeMenu(
 											generateComponents("chivito")
