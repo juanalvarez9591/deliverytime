@@ -13,9 +13,7 @@ function Food(props) {
 					style={{ height: "8rem" }}
 				/>
 				<Card.Body>
-					<Card.Title
-						style={{ fontSize: "1.3rem", height: "1.5rem" }}
-					>
+					<Card.Title style={{ fontSize: "1.2rem" }}>
 						{props.title}
 					</Card.Title>
 					<Card.Subtitle
@@ -27,11 +25,14 @@ function Food(props) {
 						{props.subtitle}
 					</Card.Text>
 				</Card.Body>
-				<Card.Body
-					style={{ display: "grid", justifyContent: "center" }}
+				<Card.Footer
+					style={{
+						display: "grid",
+						justifyContent: "center",
+					}}
 				>
 					<Button onClick={Order}>Encargar ya!</Button>
-				</Card.Body>
+				</Card.Footer>
 			</Card>
 		</>
 	);
