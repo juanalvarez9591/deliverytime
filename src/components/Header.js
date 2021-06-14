@@ -11,13 +11,18 @@ function Header() {
 	return (
 		<Navbar bg="softy" style={{ height: "5rem" }}>
 			<Link to="/">
-				<img src={BusinessLogo} style={{ width: "8rem" }}></img>
+				<img
+					src={BusinessLogo}
+					style={{ width: "8rem" }}
+					alt="Logo"
+				></img>
 			</Link>
 			<Nav className="mr-auto" style={{ padding: "1rem" }}>
 				<Link to="/menu">
 					<img
 						src={forkimg}
 						style={{ height: "50px", width: "60px" }}
+						alt="Menu"
 					></img>
 				</Link>
 			</Nav>
@@ -26,6 +31,7 @@ function Header() {
 					<img
 						src={checkoutimg}
 						style={{ height: "50px", width: "60px" }}
+						alt="Checkout"
 					></img>
 				</Link>
 			</Nav>

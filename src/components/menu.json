@@ -1,5 +1,5 @@
 {
-	"chivito": [
+	"Chivito": [
 		{
 			"key": 0,
 			"title": "Chivito al pan",
@@ -22,10 +22,10 @@
 			"price": "120 UYU"
 		}
 	],
-	"pack": [
+	"Pack": [
 		{
 			"key": 0,
-			"title": "Merca",
+			"title": "Chivito",
 			"subtitle": "No incluye estupefacientes...",
 			"url": "https://www.fundacionrecal.org/wp-content/uploads/2019/02/riesgos-efectos-cocaina.jpg",
 			"price": "300 UYU"

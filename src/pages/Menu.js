@@ -8,7 +8,9 @@ import data from "../components/menu.json";
 import React, { useState } from "react";
 
 function Menu(props) {
-	const [menu, changeMenu] = useState(generateComponents("chivito"));
+	const [menu, changeMenu] = useState(
+		generateComponents(Object.keys(data)[0])
+	);
 
 	function generateComponents(i) {
 		return data[i].map((i) => (
@@ -24,34 +26,30 @@ function Menu(props) {
 		));
 	}
 
+	function generateTables() {
+		return Object.keys(data).map((i) => (
+			<Nav.Item key={i}>
+				<Nav.Link
+					eventKey={i}
+					onSelect={() => changeMenu(generateComponents(i))}
+					key={i}
+				>
+					{i}
+				</Nav.Link>
+			</Nav.Item>
+		));
+	}
+
 	return (
 		<>
-			<Tab.Container id="left-tabs-example" defaultActiveKey="chivito">
+			<Tab.Container
+				id="left-tabs-example"
+				defaultActiveKey={Object.keys(data)[0]}
+			>
 				<Row style={{ padding: "1rem" }}>
 					<Col sm={3}>
 						<Nav variant="pills" className="flex-column">
-							<Nav.Item>
-								<Nav.Link
-									eventKey="pack"
-									onSelect={() =>
-										changeMenu(generateComponents("pack"))
-									}
-								>
-									Pack
-								</Nav.Link>
-							</Nav.Item>
-							<Nav.Item>
-								<Nav.Link
-									eventKey="chivito"
-									onSelect={() =>
-										changeMenu(
-											generateComponents("chivito")
-										)
-									}
-								>
-									Chivito
-								</Nav.Link>
-							</Nav.Item>
+							{generateTables()}
 						</Nav>
 					</Col>
 					<Col sm={9}>
