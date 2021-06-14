@@ -12,7 +12,7 @@ function Menu(props) {
 
 	function generateComponents(i) {
 		return data[i].map((i) => (
-			<Col key={i.key}>
+			<Col key={i.key} style={{ padding: "0.5rem" }}>
 				<Food
 					title={i.title}
 					subtitle={i.subtitle}
@@ -57,7 +57,7 @@ function Menu(props) {
 					<Col sm={9}>
 						<Tab.Content>
 							<Container>
-								<Row>{menu}</Row>
+								<Row style={{ padding: "0.5rem" }}>{menu}</Row>
 							</Container>
 						</Tab.Content>
 					</Col>
