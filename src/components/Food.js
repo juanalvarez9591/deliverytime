@@ -6,22 +6,30 @@ function Food(props) {
 
 	return (
 		<>
-			<Card style={{ width: "12rem" }}>
+			<Card style={{ width: "12rem", height: "20rem" }}>
 				<Card.Img
 					variant="top"
 					src={props.url}
 					style={{ height: "8rem" }}
 				/>
 				<Card.Body>
-					<Card.Title style={{ fontSize: "1.3rem" }}>
+					<Card.Title
+						style={{ fontSize: "1.3rem", height: "1.5rem" }}
+					>
 						{props.title}
 					</Card.Title>
-					<Card.Subtitle style={{ fontSize: "0.7rem" }}>
+					<Card.Subtitle
+						style={{ fontSize: "0.7rem", height: "1rem" }}
+					>
 						{props.price}
 					</Card.Subtitle>
-					<Card.Text style={{ fontSize: "0.7rem" }}>
+					<Card.Text style={{ fontSize: "0.7rem", height: "3rem" }}>
 						{props.subtitle}
 					</Card.Text>
+				</Card.Body>
+				<Card.Body
+					style={{ display: "grid", justifyContent: "center" }}
+				>
 					<Button onClick={Order}>Encargar ya!</Button>
 				</Card.Body>
 			</Card>
