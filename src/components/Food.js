@@ -1,8 +1,16 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { useDispatch } from "react-redux";
+import { addTitle, addUrl, addPrice } from "../redux/checkout";
 
 function Food(props) {
-	const Order = () => console.log("Encargado");
+	const dispatch = useDispatch();
+
+	const sendData = (title, price, url) => {
+		dispatch(addTitle(title));
+		dispatch(addUrl(url));
+		dispatch(addPrice(price));
+	};
 
 	return (
 		<>
@@ -31,7 +39,13 @@ function Food(props) {
 						justifyContent: "center",
 					}}
 				>
-					<Button onClick={Order}>Encargar ya!</Button>
+					<Button
+						onClick={() =>
+							sendData(props.title, props.url, props.price)
+						}
+					>
+						Encargar ya!
+					</Button>
 				</Card.Body>
 			</Card>
 		</>
