@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import CheckoutForm from "../components/CheckoutAddress";
+import CheckoutData from "../components/CheckoutData";
 import CheckoutTable from "../components/CheckoutTable";
 
 function Checkout() {
@@ -12,7 +12,7 @@ function Checkout() {
 				titlelist={checkout.titles}
 				pricelist={checkout.prices}
 			/>
-			<CheckoutAddress />
+			<CheckoutData />
 		</>
 	);
 

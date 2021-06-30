@@ -1,18 +1,17 @@
-import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
-const CheckoutAddress = () => {
-	const [address, setAddress] = useState("");
+const CheckoutForm = (props) => {
+	const { state, setState } = props;
 
 	const inputHandler = (i) => {
-		setAddress(i.target.value);
+		setState({ ...state, address: i.target.value });
 	};
 
 	return (
 		<Form onSubmit={(i) => i.preventDefault()}>
 			<Form.Control
 				onChange={inputHandler}
-				value={address.address}
+				value={state.state}
 				placeholder="Ingresa a donde querés que te manden el pedido (incluí detalles de cómo llegar si lo crees necesario)"
 			/>
 			<Form.Text className="text-muted">
@@ -23,10 +22,15 @@ const CheckoutAddress = () => {
 					id="checkbox"
 					type="checkbox"
 					label="Pagás con tarjeta (te llevamos el POS a tu casa)"
+					onClick={() =>
+						state.pos
+							? setState({ ...state, pos: false })
+							: setState({ ...state, pos: true })
+					}
 				/>
 			</label>
 		</Form>
 	);
 };
 
-export default CheckoutAddress;
+export default CheckoutForm;
