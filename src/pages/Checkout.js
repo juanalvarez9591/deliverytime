@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import CheckoutAddress from "../components/CheckoutAddress";
+import CheckoutForm from "../components/CheckoutAddress";
 import CheckoutTable from "../components/CheckoutTable";
 
 function Checkout() {
