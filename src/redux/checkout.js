@@ -5,7 +5,6 @@ export const checkout = createSlice({
 	initialState: {
 		titles: [],
 		prices: [],
-		url: [],
 	},
 	reducers: {
 		addTitle: (state, data) => {
@@ -14,12 +13,9 @@ export const checkout = createSlice({
 		addPrice: (state, data) => {
 			state.prices.push(data.payload);
 		},
-		addUrl: (state, data) => {
-			state.url.push(data.payload);
-		},
 	},
 });
 
-export const { addTitle, addPrice, addUrl } = checkout.actions;
+export const { addTitle, addPrice } = checkout.actions;
 
 export default checkout.reducer;
