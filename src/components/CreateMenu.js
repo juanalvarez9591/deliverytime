@@ -14,7 +14,10 @@ function CreateMenu(props) {
 
 	function generateComponents(i) {
 		return data[i].map((i) => (
-			<div key={i.key} style={{ padding: "0.3rem" }}>
+			<div
+				key={i.key}
+				style={{ padding: "0.3rem", alignContent: "center" }}
+			>
 				<Food
 					title={i.title}
 					subtitle={i.subtitle}

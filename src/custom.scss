@@ -1,9 +1,33 @@
 // change the theme
+$borderofcheckout: #eb5951;
+$softy: #eb5951;
+$primary: #ff4136;
+$danger: #0074d9;
+
 $theme-colors: (
-	"primary": #ff4136,
-	"softy": #eb5951,
-	"danger": #0074d9,
+	"primary": $primary,
+	"softy": $softy,
+	"danger": $danger,
 );
+
+#table {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+	overflow: hidden;
+}
+
+tbody {
+	border-style: solid;
+	border-width: 0.15rem;
+	border-radius: 0.4rem;
+	border-color: $borderofcheckout;
+}
+
+td {
+	text-align: left;
+}
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

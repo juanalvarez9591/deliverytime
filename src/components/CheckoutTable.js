@@ -1,12 +1,23 @@
 import { Table } from "react-bootstrap";
-
+import CheckoutItems from "./CheckoutItems";
 const CheckoutTable = (props) => {
-	const { titlelist, pricelist, deletebutton } = props;
+	const { titlelist, pricelist } = props;
+
+	const total = (
+		<tr>
+			<td>Total:</td>
+			<td></td>
+			<td>200 REAIS</td>
+		</tr>
+	);
+
 	return (
-		<Table id="table">
-			<tbody>{deletebutton}</tbody>
-			<tbody>{titlelist}</tbody>
-			<tbody>{pricelist}</tbody>
+		<Table striped responsive id="table">
+			<tbody>
+				<CheckoutItems titlelist={titlelist} pricelist={pricelist} />
+
+				{total}
+			</tbody>
 		</Table>
 	);
 };
