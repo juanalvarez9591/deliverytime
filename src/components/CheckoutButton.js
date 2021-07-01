@@ -27,17 +27,26 @@ const CheckoutButton = (props) => {
 			? " Precisaría el POS para pagar con tarjeta."
 			: "";
 
-		return console.log(
-			`Hola! podrías mandarme: ${cf.join(", ")} a ${
-				state.address
-			}.${pos} Muchas gracias.`
-		);
+		const message = `Hola! podrías mandarme: ${cf.join(", ")} a ${
+			state.address
+		}.${pos} Muchas gracias.`;
+
+		const phonenumber = "59892724405";
+		const API = "https://api.whatsapp.com/send?phone=";
+
+		const sendMessage =
+			API + phonenumber + "&text=" + message.replace(" ", "%20");
+
+		return sendMessage;
 	};
 	return (
 		<Button
 			variant="success"
 			id="wspbutton"
-			onClick={() => createOrder(state)}
+			onClick={(e) => {
+				e.preventDefault();
+				window.location.href = createOrder(state);
+			}}
 		>
 			Pedir ya
 			<img id="wspimgbutton" src={wsp} alt="Whatsapp icon" />
