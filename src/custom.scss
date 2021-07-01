@@ -29,5 +29,17 @@ td {
 	text-align: left;
 }
 
+#wspbutton {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+#wspimgbutton {
+	height: 1.5rem;
+	margin-left: 0.5rem;
+}
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

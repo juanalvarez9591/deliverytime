@@ -1,10 +1,17 @@
 import React, { useState } from "react";
+import CheckoutButton from "./CheckoutButton";
 import CheckoutForm from "./CheckoutForm";
 
 const CheckoutData = () => {
-	const [address, setAddress] = useState({ address: "", pos: false });
+	const [dataform, setDataForm] = useState({ address: "", pos: false });
+	console.log(dataform);
 
-	return <CheckoutForm state={address} setState={setAddress} />;
+	return (
+		<div>
+			<CheckoutForm state={dataform} setState={setDataForm} />
+			<CheckoutButton state={dataform} />
+		</div>
+	);
 };
 
 export default CheckoutData;
