@@ -7,7 +7,7 @@ const CheckoutData = () => {
 	console.log(dataform);
 
 	return (
-		<div>
+		<div id="checkoutdiv">
 			<CheckoutForm state={dataform} setState={setDataForm} />
 			<CheckoutButton state={dataform} />
 		</div>

@@ -20,7 +20,7 @@ $theme-colors: (
 	align-items: center;
 	justify-content: center;
 	margin: 2rem;
-	overflow: hidden;
+	width: auto;
 }
 
 tbody {
@@ -37,14 +37,28 @@ td {
 #wspbutton {
 	display: flex;
 	flex-direction: row;
-
-	align-items: center;
 	font-size: 1.2rem;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin: auto;
 }
 
 #wspimgbutton {
 	height: 1.5rem;
 	margin-left: 0.5rem;
 }
+
+#checkout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#checkoutdiv {
+	margin: 0.5rem;
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

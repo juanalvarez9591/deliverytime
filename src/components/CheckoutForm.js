@@ -12,7 +12,7 @@ const CheckoutForm = (props) => {
 			<Form.Control
 				onChange={inputHandler}
 				value={state.state}
-				placeholder="Ingresa a donde querés que te manden el pedido (incluí detalles de cómo llegar si lo crees necesario)"
+				placeholder="Dirección del pedido"
 			/>
 			<Form.Text className="text-muted">
 				No almacenamos tu dirección ni ningún tipo de informacion...
