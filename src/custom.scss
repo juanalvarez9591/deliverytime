@@ -60,5 +60,16 @@ td {
 	margin: 0.5rem;
 }
 
+#checkoutempty {
+	width: 50%;
+	margin: auto;
+	margin-top: 10rem;
+}
+
+h1 {
+	font-size: 10rem;
+	text-align: center;
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
