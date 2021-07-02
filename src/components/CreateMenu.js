@@ -13,15 +13,19 @@ function CreateMenu(props) {
 	);
 
 	function generateComponents(i) {
-		return data[i].map((i) => (
-			<div
-				key={i.key}
-				style={{
+		const FoodMenuStyle = () => {
+			if (window.innerWidth > 480) {
+				return { padding: "0.3rem", alignContent: "center" };
+			} else {
+				return {
 					padding: "0.3rem",
 					alignContent: "center",
 					margin: "auto",
-				}}
-			>
+				};
+			}
+		};
+		return data[i].map((i) => (
+			<div key={i.key} style={FoodMenuStyle()}>
 				<Food
 					title={i.title}
 					subtitle={i.subtitle}
