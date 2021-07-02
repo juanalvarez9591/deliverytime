@@ -2,12 +2,17 @@
 $borderofcheckout: #eb5951;
 $softy: #eb5951;
 $primary: #ff4136;
-$danger: #0074d9;
+$danger: #eb5951;
+
+$buttonloading: #2da046;
+$button: #ff4136;
 
 $theme-colors: (
 	"primary": $primary,
 	"softy": $softy,
 	"danger": $danger,
+	"button": $button,
+	"buttonloading": $buttonloading,
 );
 
 #table {

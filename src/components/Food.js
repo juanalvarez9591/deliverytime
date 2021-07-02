@@ -2,13 +2,22 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useDispatch } from "react-redux";
 import { addTitle, addPrice } from "../redux/checkout";
+import React, { useState } from "react";
 
 function Food(props) {
+	const [click, setClick] = useState("button");
+
 	const dispatch = useDispatch();
 
 	const sendData = (title, price) => {
 		dispatch(addTitle(title));
 		dispatch(addPrice(price));
+	};
+
+	const ButtonFeedback = () => {
+		setClick("buttonloading");
+		sendData(props.title, props.price);
+		setTimeout(() => setClick("primary"), 500);
 	};
 
 	return (
@@ -38,7 +47,7 @@ function Food(props) {
 						justifyContent: "center",
 					}}
 				>
-					<Button onClick={() => sendData(props.title, props.price)}>
+					<Button variant={click} onClick={() => ButtonFeedback()}>
 						Encargar ya!
 					</Button>
 				</Card.Body>
