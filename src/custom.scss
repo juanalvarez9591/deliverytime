@@ -66,9 +66,32 @@ td {
 	margin-top: 10rem;
 }
 
-h1 {
-	font-size: 10rem;
+#h1empty {
+	font-size: 2.5rem;
 	text-align: center;
+}
+
+#LandingPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 2rem;
+}
+
+#LandingLogo {
+	width: 15rem;
+	margin: 0.5rem;
+}
+
+#StoryTitle {
+}
+
+#StoryText {
+}
+
+#TutorialText {
 }
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";

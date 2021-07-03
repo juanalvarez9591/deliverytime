@@ -1,21 +1,15 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
-
+import banner from "../images/resources/banner.png";
 import forkimg from "../images/resources/fork.png";
 import checkoutimg from "../images/resources/checkout.png";
-const BusinessLogo =
-	"https://mir-s3-cdn-cf.behance.net/project_modules/disp/5ea7298839539.560c656d1a01f.png";
 
 function Header() {
 	return (
 		<Navbar bg="softy" style={{ height: "5rem" }}>
 			<Link to="/">
-				<img
-					src={BusinessLogo}
-					style={{ width: "8rem" }}
-					alt="Logo"
-				></img>
+				<img src={banner} style={{ width: "8rem" }} alt="Logo"></img>
 			</Link>
 			<Nav className="mr-auto" style={{ padding: "1rem" }}>
 				<Link to="/menu">

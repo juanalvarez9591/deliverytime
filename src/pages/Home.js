@@ -1,5 +1,13 @@
+import HomeDropdown from "../components/HomeDropdown";
+import HomeStatic from "../components/HomeStatic";
+
 function Home() {
-	return <p>Home</p>;
+	return (
+		<div id="LandingPage">
+			<HomeStatic />
+			<HomeDropdown />
+		</div>
+	);
 }
 
 export default Home;
