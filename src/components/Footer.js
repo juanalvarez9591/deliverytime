@@ -1,4 +1,4 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 
 const Footer = () => {
 	return (
@@ -6,7 +6,8 @@ const Footer = () => {
 			<Navbar
 				bg="softy"
 				style={{
-					height: "2.5rem",
+					height: "4rem",
+					fontSize: "0.7rem",
 					display: "flex",
 					justifyContent: "space-between",
 				}}

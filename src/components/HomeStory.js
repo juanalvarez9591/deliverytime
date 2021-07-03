@@ -5,7 +5,7 @@ import carousel3 from "../images/resources/brand/3.jpg";
 
 const HomeStory = () => {
 	return (
-		<>
+		<div id="Story">
 			<h2 id="StoryTitle">
 				Desde hace más de 150 años que llevamos la comida rioplatense a
 				las Islas Canarias.
@@ -41,7 +41,7 @@ const HomeStory = () => {
 					/>
 				</Carousel.Item>
 			</Carousel>
-		</>
+		</div>
 	);
 };
 

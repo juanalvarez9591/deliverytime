@@ -91,7 +91,17 @@ td {
 #StoryText {
 }
 
+#Story img {
+	width: 35rem;
+}
+
 #TutorialText {
+	font-size: 2rem;
+	width: 100%;
+	margin: auto;
+}
+#TutorialText img {
+	width: 2rem;
 }
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
