@@ -3,8 +3,17 @@ import HomeStory from "./HomeStory";
 import HomeTutorial from "./HomeTutorial";
 
 const HomeDropdown = () => {
+	const HomeDropdownStyle = () => {
+		if (window.innerWidth > 480) {
+			return { width: "70rem" };
+		} else {
+			return {
+				width: "20rem",
+			};
+		}
+	};
 	return (
-		<Accordion defaultActiveKey="0">
+		<Accordion defaultActiveKey="0" style={HomeDropdownStyle()}>
 			<Card>
 				<Card.Header>
 					<Accordion.Toggle as={Button} variant="link" eventKey="0">
