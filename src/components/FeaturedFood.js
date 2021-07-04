@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import data from "./featuredfood.json";
+import featuredfood from "./ff.js";
 
 function Featured() {
 	function CarouselSize() {
@@ -10,7 +10,7 @@ function Featured() {
 		}
 	}
 
-	const CarouselComponents = data.map((i) => (
+	const CarouselComponents = featuredfood.map((i) => (
 		<Carousel.Item>
 			<img src={i.url} alt={i.alt} style={CarouselSize()} />
 		</Carousel.Item>
