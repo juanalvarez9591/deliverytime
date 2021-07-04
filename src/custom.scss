@@ -103,5 +103,11 @@ td {
 #TutorialText img {
 	width: 2rem;
 }
+
+#LandingPage {
+	font-family: "Otomanopee One", sans-serif;
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");

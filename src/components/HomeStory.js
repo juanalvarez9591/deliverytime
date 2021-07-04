@@ -8,15 +8,14 @@ const HomeStory = () => {
 		<div id="Story">
 			<h2 id="StoryTitle">
 				Desde hace más de 150 años que llevamos la comida rioplatense a
-				las Islas Canarias.
+				tu paladar.
 			</h2>
 			<h3 id="StoryText">
 				En sus inicios, comenzamos como un carrito de comida que ofrecía
 				chivitos, milanesas, entre otras comidas típicas del Uruguay,
 				pero con el paso del tiempo nuestra receta criolla de chivitos
 				se popularizó, dándole el nombre de la casa. Y hoy en día nos
-				convertimos en el primer restaurante 4 estrellas de la zona sur
-				de las Islas Canarias.
+				convertimos en el primer restaurante 4 estrellas de la zona sur.
 			</h3>
 			<Carousel controls={false} fade>
 				<Carousel.Item>
