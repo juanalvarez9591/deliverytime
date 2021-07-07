@@ -1,6 +1,8 @@
+import checkoutlogo from "../images/resources/checkout.png";
+
 const FloatingCheckout = () => {
 	return (
-		<p
+		<div
 			style={{
 				position: "fixed",
 				bottom: 0,
@@ -8,8 +10,16 @@ const FloatingCheckout = () => {
 				margin: "2rem",
 			}}
 		>
-			Test
-		</p>
+			<img
+				src={checkoutlogo}
+				style={{
+					width: "3.5rem",
+					backgroundColor: "red",
+					padding: "0.3rem",
+					borderRadius: "0.5rem",
+				}}
+			/>
+		</div>
 	);
 };
 
