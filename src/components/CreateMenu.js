@@ -57,7 +57,7 @@ function CreateMenu(props) {
 				id="left-tabs-example"
 				defaultActiveKey={Object.keys(data)[0]}
 			>
-				<Row style={{ padding: "1rem" }}>
+				<Row style={{ padding: "1rem", width: "100%" }}>
 					<Col sm={3}>
 						<Nav variant="pills" className="flex-column">
 							{generateTables()}
