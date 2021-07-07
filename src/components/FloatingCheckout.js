@@ -10,15 +10,7 @@ const FloatingCheckout = () => {
 				margin: "2rem",
 			}}
 		>
-			<img
-				src={checkoutlogo}
-				style={{
-					width: "3.5rem",
-					backgroundColor: "red",
-					padding: "0.3rem",
-					borderRadius: "0.5rem",
-				}}
-			/>
+			<img id="floatingcheckoutitem" src={checkoutlogo} />
 		</div>
 	);
 };

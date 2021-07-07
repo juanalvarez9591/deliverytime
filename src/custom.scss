@@ -96,6 +96,13 @@ td {
 	font-family: "Otomanopee One", sans-serif;
 }
 
+#floatingcheckoutitem {
+	width: 3.5rem;
+	background-color: $primary;
+	padding: 0.3rem;
+	border-radius: 0.5rem;
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
