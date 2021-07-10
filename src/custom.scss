@@ -115,6 +115,16 @@ td {
 	font-family: "Otomanopee One", sans-serif;
 }
 
+#deletecheckoutitem {
+	font-family: "Otomanopee One", sans-serif;
+	background-color: $primary;
+	border-radius: 100%;
+	text-align: center;
+	width: 1.5rem;
+	margin-left: 0.5rem;
+	color: white;
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");

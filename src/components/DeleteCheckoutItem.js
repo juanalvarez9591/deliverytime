@@ -14,12 +14,9 @@ const DeleteCheckoutItem = (props) => {
 	};
 
 	return (
-		<Image
-			src={del}
-			onClick={() => deleteItem(title, price)}
-			alt="Delete"
-			height="40rem"
-		/>
+		<p onClick={() => deleteItem(title, price)} id="deletecheckoutitem">
+			X
+		</p>
 	);
 };
 
