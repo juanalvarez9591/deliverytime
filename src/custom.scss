@@ -96,11 +96,23 @@ td {
 	font-family: "Otomanopee One", sans-serif;
 }
 
-#floatingcheckoutitem {
+#floatingcheckout {
 	width: 3.5rem;
-	background-color: $primary;
 	padding: 0.3rem;
 	border-radius: 0.5rem;
+	position: relative;
+}
+
+#floatingcheckoutnumber {
+	background-color: $primary;
+	border-radius: 100%;
+	width: 1.5rem;
+	text-align: center;
+	padding: 0.1rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: "Otomanopee One", sans-serif;
 }
 
 // Import Bootstrap and its default variables

@@ -3,8 +3,6 @@ import { useSelector } from "react-redux";
 
 const FloatingCheckout = () => {
 	const checkoutlength = useSelector((state) => state.checkout.titles.length);
-	const empty = <img id="floatingcheckoutitem" src={checkoutlogo} />;
-	const notempty = <p id="floatingcheckoutitem">{checkoutlength}</p>;
 
 	return (
 		<div
@@ -15,7 +13,8 @@ const FloatingCheckout = () => {
 				margin: "2rem",
 			}}
 		>
-			{checkoutlength == 0 ? empty : notempty}
+			<img alt="Checkout" id="floatingcheckout" src={checkoutlogo} />
+			<p id="floatingcheckoutnumber">{checkoutlength}</p>
 		</div>
 	);
 };
