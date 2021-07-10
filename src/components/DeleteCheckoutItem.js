@@ -1,5 +1,3 @@
-import del from "../images/resources/delete.svg";
-import { Image } from "react-bootstrap";
 import { removeTitle, removePrice } from "../redux/checkout";
 import { useDispatch } from "react-redux";
 
