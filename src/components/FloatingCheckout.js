@@ -1,5 +1,6 @@
 import checkoutlogo from "../images/resources/checkout.png";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const FloatingCheckout = () => {
 	const checkoutlength = useSelector((state) => state.checkout.titles.length);
@@ -13,8 +14,10 @@ const FloatingCheckout = () => {
 				margin: "2rem",
 			}}
 		>
-			<img alt="Checkout" id="floatingcheckout" src={checkoutlogo} />
-			<p id="floatingcheckoutnumber">{checkoutlength}</p>
+			<Link to="/checkout" style={{ color: "white" }}>
+				<img alt="Checkout" id="floatingcheckout" src={checkoutlogo} />
+				<p id="floatingcheckoutnumber">{checkoutlength}</p>
+			</Link>
 		</div>
 	);
 };
