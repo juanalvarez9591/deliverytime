@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Tooltip, OverlayTrigger } from "react-bootstrap";
 import wsp from "../images/resources/whatsappicon.png";
 import { useSelector } from "react-redux";
 
@@ -41,24 +41,39 @@ const CheckoutButton = (props) => {
 	};
 
 	const handleOrder = () => {
-		if (/[\w\d]/.test(state.address)) {
-			console.log("Address cannot be empty");
+		if (!/[\w\d]/.test(state.address)) {
 		} else {
 			window.location.href = createOrder(state);
 		}
 	};
+
+	const handleOverlay = (props) => {
+		if (/[\w\d]/.test(state.address)) {
+			return <p>{null}</p>;
+		} else {
+			return (
+				<Tooltip id="button-tooltip" {...props}>
+					Te falta escribir la direccion del pedido...
+				</Tooltip>
+			);
+		}
+	};
 	return (
-		<Button
-			variant="success"
-			id="wspbutton"
-			onClick={(e) => {
-				e.preventDefault();
-				handleOrder();
-			}}
-		>
-			Pedir ya
-			<img id="wspimgbutton" src={wsp} alt="Whatsapp icon" />
-		</Button>
+		<>
+			<OverlayTrigger placement="bottom" overlay={handleOverlay}>
+				<Button
+					variant="success"
+					id="wspbutton"
+					onClick={(e) => {
+						e.preventDefault();
+						handleOrder();
+					}}
+				>
+					Pedir ya
+					<img id="wspimgbutton" src={wsp} alt="Whatsapp icon" />
+				</Button>
+			</OverlayTrigger>
+		</>
 	);
 };
 
