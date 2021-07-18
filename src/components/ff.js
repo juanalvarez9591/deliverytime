@@ -4,7 +4,7 @@ import papas from "../images/resources/featured/papas.png";
 
 const featuredfood = [
 	{
-		url: chivito,
+		url: minas,
 		alt: "Featured",
 	},
 	{
@@ -12,7 +12,7 @@ const featuredfood = [
 		alt: "Featured",
 	},
 	{
-		url: minas,
+		url: chivito,
 		alt: "Featured",
 	},
 ];

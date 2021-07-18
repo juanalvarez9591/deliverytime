@@ -39,13 +39,21 @@ const CheckoutButton = (props) => {
 
 		return sendMessage;
 	};
+
+	const handleOrder = () => {
+		if (/[\w\d]/.test(state.address)) {
+			console.log("Address cannot be empty");
+		} else {
+			window.location.href = createOrder(state);
+		}
+	};
 	return (
 		<Button
 			variant="success"
 			id="wspbutton"
 			onClick={(e) => {
 				e.preventDefault();
-				window.location.href = createOrder(state);
+				handleOrder();
 			}}
 		>
 			Pedir ya
