@@ -13,7 +13,7 @@ const HomeDropdown = () => {
 		}
 	};
 	return (
-		<Accordion defaultActiveKey="0" style={HomeDropdownStyle()}>
+		<Accordion defaultActiveKey="1" style={HomeDropdownStyle()}>
 			<Card>
 				<Card.Header>
 					<Accordion.Toggle as={Button} variant="link" eventKey="0">

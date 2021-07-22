@@ -10,7 +10,7 @@ const HomeStory = () => {
 				text: {
 					width: "100%",
 					margin: "auto",
-					fontSize: "2rem",
+					fontSize: "1.3rem",
 				},
 				carousel: { width: "40rem", marginTop: "1rem" },
 			};
