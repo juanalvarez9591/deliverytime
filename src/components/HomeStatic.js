@@ -1,12 +1,10 @@
-import { Button, Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import carousel1 from "../images/resources/brand/1.jpeg";
 import carousel2 from "../images/resources/brand/2.jpeg";
 import carousel3 from "../images/resources/brand/3.jpeg";
 import carousel4 from "../images/resources/brand/4.jpeg";
-import HomeTutorial from "./HomeTutorial";
 import { Link } from "react-router-dom";
 import menulogo from "../images/resources/fork.png";
-import checkoutlogo from "../images/resources/checkout.png";
 
 const HomeStatic = () => {
 	return (
